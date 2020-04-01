@@ -7,11 +7,12 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import com.Avdhio.proyek_uts.Adapter.GameAdapter;
 import com.Avdhio.proyek_uts.Model.GameLogo;
 
 import java.util.ArrayList;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements GameAdapter.OnitemListener {
 
 
     @Override
@@ -33,5 +34,16 @@ public class MainActivity extends AppCompatActivity {
     public void GameMobile(View view) {
         Intent intent = new Intent(this, MobileActivity.class);
         startActivity(intent);
+    }
+
+    @Override
+    public void onListClicked(int index, GameLogo item) {
+        Intent intent = new Intent(this,  DetailActivity.class);
+        startActivity(intent);
+    }
+
+    @Override
+    public void onPointerCaptureChanged(boolean hasCapture) {
+
     }
 }

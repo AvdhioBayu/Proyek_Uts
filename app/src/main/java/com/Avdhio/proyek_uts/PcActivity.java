@@ -23,6 +23,5 @@ public class PcActivity extends AppCompatActivity {
         rvPc.setLayoutManager(new LinearLayoutManager(this));
         GameAdapter gameAdapter = new GameAdapter(list);
         rvPc.setAdapter(gameAdapter);
-
     }
 }

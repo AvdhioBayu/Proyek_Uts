@@ -4,6 +4,15 @@ public class GameLogo {
     private static int logogame;
     private String name;
     private String Detail;
+    private String Spec;
+
+    public String getSpec() {
+        return Spec;
+    }
+
+    public void setSpec(String spec) {
+        Spec = spec;
+    }
 
     public static int getLogogame() {
         return logogame;
