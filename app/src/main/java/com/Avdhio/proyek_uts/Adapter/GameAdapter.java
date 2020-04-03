@@ -20,8 +20,11 @@ public class GameAdapter extends RecyclerView.Adapter<GameAdapter.ViewHolder>  {
     private ArrayList<GameLogo> listGame;
     private OnitemListener listener;
 
+    public GameAdapter(ArrayList<GameLogo> listGame) {
+        this.listGame = listGame;
+    }
 
-    public GameAdapter(ArrayList<GameLogo> list,OnitemListener listener) {
+    public GameAdapter(ArrayList<GameLogo> list, OnitemListener listener) {
         this.listGame = list;
         this.listener = listener;
     }

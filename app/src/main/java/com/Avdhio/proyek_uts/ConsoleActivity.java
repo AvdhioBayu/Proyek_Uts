@@ -14,6 +14,8 @@ import java.util.ArrayList;
 public class ConsoleActivity extends AppCompatActivity {
     private RecyclerView rvConsole;
     private ArrayList<GameLogo>list = new ArrayList<>();
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
