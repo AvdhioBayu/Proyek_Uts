@@ -13,21 +13,23 @@ import com.synnapps.carouselview.ImageListener;
 import java.util.ArrayList;
 
 public class DetailActivity extends AppCompatActivity {
-    private GameLogo item;
-    private TextView detail;
-    private TextView spec;
-    private ArrayList<GameLogo> list = new ArrayList<>();
+    private TextView detailgame;
+    private TextView specgame;
     CarouselView carouselView;
-    int[] sampleImages = {R.drawable.pubg};
+    int[] sampleImages = {R.drawable.pubg1,R.drawable.pubg2,};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail);
-        detail = findViewById(R.id.detail);
-        spec = findViewById(R.id.spec);
+        detailgame = findViewById(R.id.detail);
+        specgame = findViewById(R.id.spec);
 
-
+        Bundle extras = getIntent().getExtras();
+        if(extras != null){
+            detailgame.setText(extras.getString("Data Detail"));
+            specgame.setText(extras.getString("Data Spec"));
+        }
 
         carouselView = findViewById(R.id.carouselView);
         carouselView.setPageCount(sampleImages.length);
@@ -40,6 +42,6 @@ public class DetailActivity extends AppCompatActivity {
         }
     };
 
-        };
+        }
 
 

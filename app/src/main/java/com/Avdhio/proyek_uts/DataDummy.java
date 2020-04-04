@@ -22,7 +22,8 @@ public class DataDummy {
     };
 
     public static String Spec[] = {
-            "Spesifikasi Minimum PUBG Untuk PC\n" +
+            "Spesifikasi Minimum PUBG PC :\n" +
+                    "\n" +
                     "Sistem Operasi: 64-bit Windows 7, Windows 8.1, Windows 10.\n" +
                     "Processor: Intel Core i3-4340 / AMD FX-6300.\n" +
                     "Memory RAM: 8 GB RAM.\n" +
@@ -31,19 +32,19 @@ public class DataDummy {
                     "Koneksi: Broadband Internet connection.\n" +
                     "Penyimpann HDD: 30 GB tersedia pada HDD.\n",
 
-            "Here are the Tom Clancy's Rainbow Six: Siege System Requirements (Minimum)\n" +
+            "Here are the Tom Clancy's Rainbow Six: Siege System Requirements (Minimum) :\n" +
+                    "\n" +
                     "CPU: Intel Core i3 560 @ 3.3GHz or better, AMD Phenom II X4 945 @ 3.0Ghz or better\n" +
                     "CPU SPEED: Info\n" +
                     "RAM: 6 GB\n" +
                     "OS: Windows 7 64 bit, Windows 8 64 bit, Windows 10 64 bit\n" +
                     "VIDEO CARD: NVIDIA GeForce GTX 460, AMD Radeon HD 5770, And DX11 cards with 1GB VRAM\n" +
-                    "PIXEL SHADER: 5.0\n" +
-                    "VERTEX SHADER: 5.0\n" +
                     "SOUND CARD: Yes\n" +
                     "FREE DISK SPACE: 30 GB\n" +
                     "DEDICATED VIDEO RAM: 1 GB",
 
             "SPESIFIKASI MINIMUM:\n" +
+                    "\n" +
                     "OS: Windows 7 or newer\n" +
                     "Processor: Dual core from Intel or AMD at 2.8 GHz\n" +
                     "Memory: 4 GB RAM\n" +
@@ -53,8 +54,7 @@ public class DataDummy {
                     "Storage: 15 GB available space\n" +
                     "Sound Card: DirectX Compatible",
 
-            "Minimum Specifications\n" +
-                    "Here are the minimum specs needed to play Call of Duty: Warzone:\n" +
+            "Minimum Specifications :\n" +
                     "\n" +
                     "OS: Windows 7 64-Bit (SP1) or Windows 10 64-Bit\n" +
                     "CPU: Intel Core i3-4340 or AMD FX-6300\n" +
@@ -65,7 +65,8 @@ public class DataDummy {
                     "Network: Broadband Internet connection\n" +
                     "Sound Card: DirectX Compatible",
 
-            "APEX LEGENDS MINIMUM SYSTEM REQUIREMENTS\n" +
+            "APEX LEGENDS MINIMUM SYSTEM REQUIREMENTS :\n" +
+                    "\n" +
                     "OS: 64-bit Windows 7.\n" +
                     "CPU: Intel Core i3-6300 3.8GHz / AMD FX-4350 4.2 GHz Quad-Core Processor.\n" +
                     "RAM: 6GB.\n" +
@@ -88,9 +89,10 @@ public class DataDummy {
         GameLogo gameLogo = new GameLogo();
         gameLogo.setName(gameName[position]);
         gameLogo.setDetail(Detail[position]);
+        gameLogo.setSpec(Spec[position]);
         gameLogo.setLogogame(logogame[position]);
         list.add(gameLogo);
     }
     return list;
-    };
+    }
 }

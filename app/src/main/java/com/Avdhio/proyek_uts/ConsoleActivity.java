@@ -14,6 +14,7 @@ import java.util.ArrayList;
 public class ConsoleActivity extends AppCompatActivity {
     private RecyclerView rvConsole;
     private ArrayList<GameLogo>list = new ArrayList<>();
+    private GameAdapter.OnitemListener context;
 
 
     @Override
@@ -23,7 +24,7 @@ public class ConsoleActivity extends AppCompatActivity {
         rvConsole = findViewById(R.id.rv_pc);
         list.addAll(DataDummy.GetListData());
         rvConsole.setLayoutManager(new LinearLayoutManager(this));
-        GameAdapter gameAdapter = new GameAdapter(list);
-        rvConsole.setAdapter(gameAdapter);
+       // GameAdapter gameAdapter = new GameAdapter(list,this);
+       // rvConsole.setAdapter(gameAdapter);
     }
 }
