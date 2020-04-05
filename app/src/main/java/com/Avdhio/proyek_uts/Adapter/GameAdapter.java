@@ -41,8 +41,9 @@ public class GameAdapter extends RecyclerView.Adapter<GameAdapter.ViewHolder>  {
     GameLogo item = listGame.get(position);
     holder.bind(position, item);
 
+
     Glide.with(holder.itemView.getContext())
-            .load(GameLogo.getLogogame())
+            .load(item.getLogogame())
             .apply(new RequestOptions().override(350, 55))
             .into(holder.gambar);
 

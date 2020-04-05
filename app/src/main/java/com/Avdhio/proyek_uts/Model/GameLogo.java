@@ -1,7 +1,7 @@
 package com.Avdhio.proyek_uts.Model;
 
 public class GameLogo {
-    private static int logogame;
+    private int logogame;
     private String name;
     private String Detail;
     private String Spec;
@@ -14,7 +14,7 @@ public class GameLogo {
         Spec = spec;
     }
 
-    public static int getLogogame() {
+    public int getLogogame() {
         return logogame;
     }
 

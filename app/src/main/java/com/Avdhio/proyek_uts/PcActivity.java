@@ -32,7 +32,11 @@ public class PcActivity extends AppCompatActivity implements GameAdapter.OnitemL
     public void onListClicked(int index, GameLogo item) {
         String detail = item.getDetail();
         String spec = item.getSpec();
+        String nama = item.getName();
+        int logogame = item.getLogogame();
         Intent intent = new Intent(this, DetailActivity.class);
+        intent.putExtra("Nama Game", nama);
+        intent.putExtra("Logo Game", logogame);
         intent.putExtra("Data Detail",detail);
         intent.putExtra("Data Spec" , spec);
         startActivity(intent);
