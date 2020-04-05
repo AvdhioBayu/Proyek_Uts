@@ -10,8 +10,6 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".DetailActivity"></activity>
-        <activity android:name=".MobileActivity" />
-        <activity android:name=".ConsoleActivity" />
         <activity android:name=".PcActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>

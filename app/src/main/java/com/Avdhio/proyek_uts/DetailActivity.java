@@ -23,6 +23,7 @@ public class DetailActivity extends AppCompatActivity {
     int[] imageDota2 = {R.drawable.dota2_1,R.drawable.dota2_2,R.drawable.dota2_3};
     int[] imageCodw = {R.drawable.codw1,R.drawable.codw2,R.drawable.codw3};
     int[] imageApex = {R.drawable.apex1,R.drawable.apex2,R.drawable.apex3};
+    int[] imageWd = {R.drawable.watchdog_1,R.drawable.watchdog_2,R.drawable.watchdog_3};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,6 +60,9 @@ public class DetailActivity extends AppCompatActivity {
             }
             if (namagame.equals("Apex Legends")) {
                 imageView.setImageResource(imageApex[position]);
+            }
+            if (namagame.equals("Watch_Dogs™")) {
+                imageView.setImageResource(imageWd[position]);
             }
         }
     };

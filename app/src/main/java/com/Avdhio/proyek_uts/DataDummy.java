@@ -10,7 +10,8 @@ public class DataDummy {
             "Tom Clancy's Rainbow Six Siege",
             "Dota 2",
             "Call Of Duty : Warzone",
-            "Apex Legends"
+            "Apex Legends",
+            "Watch_Dogs™"
     };
 
     public  static String Detail []={
@@ -18,7 +19,8 @@ public class DataDummy {
             "Tom Clancy's Rainbow Six Siege is a first-person shooter game, in which players utilize many different operators from the Rainbow team. Different operators have different nationalities, weapons, and gadgets.The game features an asymmetrical structure whereby the teams are not always balanced in their choices of abilities",
             "Dota 2 is a multiplayer online battle arena (MOBA) video game in which two teams of five players compete to collectively destroy a large structure defended by the opposing team known as the \"Ancient\", whilst defending their own.",
             "Warzone features three game modes: Battle Royale, BR Solos and Blood Money.[4] While Battle Royale is a genre popularized by games like PlayerUnknown's Battlegrounds, the \"Blood Money\" gameplay mode is related to the in-game currency mechanic and is unique to Warzone.",
-            "Apex Legends is an online multiplayer battle royale game featuring squads of three players using pre-made characters (called \"Legends\"), similar to those of hero shooters. Alternate modes have been introduced allowing for single and for two-player squads since the game's release."
+            "Apex Legends is an online multiplayer battle royale game featuring squads of three players using pre-made characters (called \"Legends\"), similar to those of hero shooters. Alternate modes have been introduced allowing for single and for two-player squads since the game's release.",
+            "Watch_Dogs takes place in a fully simulated living city where, using your smartphone, you have real-time control over the city’s infrastructure. Trap your enemy in a 30-car pileup by manipulating the traffic lights. Stop a train, and then board it to evade the authorities"
     };
 
     public static String Spec[] = {
@@ -72,7 +74,17 @@ public class DataDummy {
                     "RAM: 6GB.\n" +
                     "GPU: NVIDIA GeForce GT 640 / Radeon HD 7730.\n" +
                     "GPU RAM: 1 GB.\n" +
-                    "HARD DRIVE: Minimum 22 GB of free space."
+                    "HARD DRIVE: Minimum 22 GB of free space.",
+
+            "MINIMUM:\n" +
+                    "\n" +
+                    "OS: Windows Vista (SP2), Windows 7 (SP1) or Windows 8 (Please note that we only support 64 bit OSs.)\n" +
+                    "Processor: Intel Core 2 Quad Q8400 @ 2.66Ghz or AMD Phenom II X4 940 @ 3.0Ghz\n" +
+                    "Memory: 6 GB RAM\n" +
+                    "Graphics: DirectX 11 graphics card with 1 GB Video RAM - Nvidia Geforce GTX 460 or AMD Radeon HD 5770\n" +
+                    "DirectX: Version 11\n" +
+                    "Storage: 25 GB available space\n" +
+                    "Sound Card: DirectX 9.0c Compatible Sound Card with Latest Drivers"
     };
 
     public static int logogame []={
@@ -80,7 +92,8 @@ public class DataDummy {
             R.drawable.r6,
             R.drawable.dota2,
             R.drawable.codw,
-            R.drawable.apex
+            R.drawable.apex,
+            R.drawable.watchdog
     };
 
     static ArrayList <GameLogo> GetListData(){

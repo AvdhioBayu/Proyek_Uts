@@ -8,6 +8,7 @@
     app:cardCornerRadius="8dp"
     app:cardElevation="4dp"
     app:cardUseCompatPadding="true"
+    app:cardBackgroundColor="#8D93B3"
     >
 
     <LinearLayout
@@ -36,6 +37,7 @@
             android:gravity="center"
             android:textSize="24sp"
             tools:text="Club Name"
+            android:textColor="#FFFEFF"
             />
     </LinearLayout>
 </androidx.cardview.widget.CardView>

@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DetailActivity">
+    tools:context=".DetailActivity"
+    android:background="@color/cardview_dark_background">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -30,13 +31,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="28dp"
-                android:text="TextView" />
+                android:text="TextView"
+                android:textColor="#FFFEFF"/>
 
             <TextView
                 android:id="@+id/spec"
                 android:scrollbars="vertical"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textColor="#FFFEFF"
                 android:layout_marginTop="10dp"
                 android:text="TextView"/>
         </LinearLayout>
